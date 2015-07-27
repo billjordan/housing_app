@@ -5,7 +5,6 @@ import requests
 
 latitude_pattern = re.compile("data-latitude=(\"|\')\+*-*[0-9]+.[0-9]+(\"|\')")
 longitude_pattern = re.compile("data-longitude=(\"|\')\+*-*[0-9]+.[0-9]+(\"|\')")
-#price_pattern = re.compile("\<span[\\s+]class=(\"|\')price(\"|\')\>[$]?\\d+[.d+]?\</span\>")
 price_pattern = re.compile("<span\sclass=(\"|\')price(\"|\')>[$]?\d+(\.\d*)?</span>")
 amount_pattern = re.compile("[$]?\d+(\.\d*)?")
 

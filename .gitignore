@@ -3,3 +3,5 @@
 *.pyc
 
 hrt_data/*
+
+*/.idea/*
