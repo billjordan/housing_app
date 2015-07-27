@@ -1,6 +1,7 @@
 import feedparser
 import re
 from ListingPage import ListingPage
+from HrtModule import *
 
 url = 'https://norfolk.craigslist.org/search/apa?format=rss'
 pattern = re.compile("/[0-9]+.html")
@@ -20,6 +21,7 @@ class Listing(object):
         self.latitude = self.page.latitude
         self.longitude = self.page.longitude
         self.price = self.page.price
+        self.bus_stop = get_closest_stop(self.latitude, self.longitude)
 
 
 def main():
