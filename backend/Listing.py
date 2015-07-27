@@ -1,5 +1,6 @@
 import feedparser
 import re
+from ListingPage import ListingPage
 
 url = 'https://norfolk.craigslist.org/search/apa?format=rss'
 pattern = re.compile("/[0-9]+.html")
@@ -15,6 +16,10 @@ class Listing(object):
         result = pattern.search(rss_entry["id"])
         self.uid = rss_entry["id"][result.start() + 1:result.end()-5]
         self.link = rss_entry["link"]
+        self.page = ListingPage(self.link)
+        self.latitude = self.page.latitude
+        self.longitude = self.page.longitude
+        self.price = self.page.price
 
 
 def main():
