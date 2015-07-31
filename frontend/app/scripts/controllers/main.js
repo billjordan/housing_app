@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name housingAppApp.controller:MainCtrl
+ * @name housingApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the housingAppApp
+ * Controller of the housingApp
  */
-angular.module('housingAppApp')
+angular.module('housingApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

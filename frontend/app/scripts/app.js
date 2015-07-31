@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name housingAppApp
+ * @name housingApp
  * @description
- * # housingAppApp
+ * # housingApp
  *
  * Main module of the application.
  */
 angular
-  .module('housingAppApp', [
+  .module('housingApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
