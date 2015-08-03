@@ -1,3 +1,9 @@
-<ul ng-repeat="(index, listing) in listings">
-    <li><a ng-href="#/listing/{{index}}">{{listing.title}}</a></li>
+<ul class="list-group" ng-repeat="(index, listing) in listings">
+    <a ng-href="#/listing/{{index}}" >
+        <li class="list-group-item">
+            <!-- force big image into thumbnail if thumbnail is unavailable -->
+            <img ng-src="{{listing.thubnail_img_location}}" fallback-src="{{listing.big_img_location}}" class="thumbnail-img" >
+            <p ng-bind-html="listing.title"></p>
+        </li>
+    </a>
 </ul>

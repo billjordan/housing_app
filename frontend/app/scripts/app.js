@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    "firebase"
+    "firebase",
+    'dcbImgFallback'
   ])
     .constant("FIREBASE_URL", "https://housingapp.firebaseio.com/")
   .config(function ($routeProvider) {
