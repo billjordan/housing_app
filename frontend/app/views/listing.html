@@ -1,2 +1,11 @@
-<p ng-bind-html="apartment_listing.title"></p>
-<img ng-src="{{apartment_listing.big_img_location}}"/>
+<div >
+    <a ng-href="#/listing/{{prevListing}}" >
+        <i id="prevListingArrow" class="fa fa-arrow-circle-left fa-2x"></i>
+    </a>
+    
+    <a ng-href="#/listing/{{nextListing}}" >
+        <i id="nextListingArrow" class="fa fa-arrow-circle-right fa-2x"></i>
+    </a>
+</div>
+<p ng-bind-html="apartmentListing.title"></p>
+<img ng-src="{{apartmentListing.big_img_location}}"/>
