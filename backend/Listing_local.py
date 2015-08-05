@@ -12,7 +12,7 @@ import pprint
 url = 'http://localhost/cl_pages/rss_feed.xml'
 strip_string = "http://norfolk.craigslist.org/apa/"
 img_string_cl = "http://images.craigslist.org/"
-replace_string = "http://localhost/new_cl_pages/"
+replace_string = "http://www.billjordan.info/new_cl_pages/"
 pattern = re.compile("/[0-9]+.html")
 
 class Listing(object):
